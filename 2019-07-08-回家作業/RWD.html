@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RWD</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin-top: 110px;
+            background-color: antiquewhite;
+        }
+        #navbar{
+            background-color: gray;
+            width: 100%;
+            height: 100px;
+            margin: 0 0 10px 0;
+            position: fixed;
+            top: 0;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .logo{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border: 2px solid black;
+            float: left;
+            position: fixed;
+            left: 0;
+            top: 0;
+            border-radius: 15px;
+        }
+        ul{
+            width: 280px;
+            height: 100px;
+            background-color: red;
+            list-style: none;
+            float: right;
+            position: fixed;
+            top: 0;
+            right: 0;
+            margin: 0;
+            padding: 10px;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .btnA{
+            border: 1px solid black;
+            padding: 5px;
+            float: left;
+            height: 80px;
+            width: 80px;
+            margin-right: 10px;
+            border-radius: 15px;
+        }
+        .btnB{
+            border: 1px solid black;
+            padding: 5px;
+            float: left;
+            height: 80px;
+            width: 80px;
+            margin-right: 10px;
+            border-radius: 15px;
+        }
+        .btnC{
+            border: 1px solid black;
+            padding: 5px;
+            float: left;
+            height: 80px;
+            width: 80px;
+            border-radius: 15px;
+        }
+        #all{
+            height: 500px;
+            width: 1180px;
+            background-color: black;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+        }
+        .mainL{
+            width: calc(50% - 10px);
+            height: 480px;
+            background-color: aquamarine;
+            float: left;
+            margin-right: 10px;
+        }
+        .mainR{
+            background-color: black;
+            height:480px;
+            width: 50%;
+            float: left;
+        }
+        .mainR-top{
+            background-color: black;
+            width: 100%;
+            height: 235px;
+            margin-bottom: 10px;
+        }
+        .mainR-bot{
+            background-color: black;
+            width: 100%;
+            height: 235px;
+        }
+        .mainR-topL{
+            height: 100%;
+            width: calc(50% - 10px);
+            background-color: brown;
+            float: left;
+            margin-right: 10px;
+        }
+        .mainR-topR{
+            height: 100%;
+            width: 50%;
+            background-color: blueviolet;
+            float: left;
+        }
+        .mainR-botL{
+            height: 100%;
+            width: calc(50% - 10px);
+            background-color: cornflowerblue;
+            float: left;
+            margin-right: 10px;
+        }
+        .mainR-botR{
+            height: 100%;
+            width: 50%;
+            background-color: cadetblue;
+            float: left;
+        }
+        @media screen and (max-width:1200px){
+            #all{
+                height: 1000px;
+                width: 100%;
+            }
+            .mainL{
+                width: 100%;
+                height: 490px;
+                margin-bottom: 10px;
+            }
+            .mainR{
+                width: 100%;
+                height: 490px;
+            }
+        }
+        @media screen and (max-width:767px){
+            #all{
+                height: 1490px;
+                width: 100%;
+            }
+            .mainR-topL{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .mainR-topR{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .mainR-botL{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .mainR-botR{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>    
+    <div id="navbar">
+        <div class="logo"></div>
+        <ul>
+            <li class="btnA">btnA</li>
+            <li class="btnB">btnB</li>
+            <li class="btnC">btnC</li>
+        </ul>
+    </div>
+    <div id="all">
+        <div class="mainL">A</div>
+        <div class="mainR">
+            <div class="mainR-top">
+                <div class="mainR-topL">B</div>
+                <div class="mainR-topR">C</div>
+            </div>
+            <div class="mainR-bot">
+                <div class="mainR-botL">D</div>
+                <div class="mainR-botR">E</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

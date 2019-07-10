@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>div01</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            transition-duration: 0.5s;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: antiquewhite;
+            position: relative;
+            top: 0;
+        }
+        nav{
+            width: 325px;
+            height: 100%;
+            background-color: azure;
+            background-image: url(img/menu.jpg);
+            background-position: center;
+            background-size: cover;
+            position: fixed;
+            left:0;
+            top: 0;
+            margin-right: 0;
+        }
+        .logo{
+            width: 150px;
+            height: 150px;
+            background-color: gray;
+            background-image: url(img/logo.png);
+            border-radius: 5px;
+            background-position: center;
+            background-size: cover;
+            margin:100px auto 50px auto;
+        }
+        .logo:hover {
+            transform: scale(1.1);
+        }
+        .line{
+            border: 1px solid black;
+            width: 100px;
+            height: 50px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 10px;
+            font-weight: 900;
+        }
+        .line:hover{
+            font-size: 25px;
+            color: black;
+            background-color: white;
+        }
+        .main{
+            width: calc(100% - 325px);
+            height: 100%;
+            background-color: aquamarine;
+            background-image: url(img/B.jpg);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            right: 0;
+        }
+        .block{
+            width: 960px;
+            height: 570px;
+            background-color: rgba(red, green, blue, 0);
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: calc(50vh - 285px);
+            overflow: hidden;
+        }
+        .pic1{
+            height: 100%;
+            width: calc(33% - 10px);
+            background-color: blueviolet;
+            background-image: url(img/A.jpg);
+            background-position: center;
+            background-size: cover;
+            margin-right: 10px;
+            float: left;
+        }
+        .pic1:hover {
+            transform: scale(1.1);
+        }
+        .pic2{
+            height: 100%;
+            width: calc(34% - 10px);
+            background-color: red;
+            background-image: url(img/B.jpg);
+            background-position: center;
+            background-size: cover;
+            margin-right: 10px;
+            float: left;
+        }
+        .pic2:hover {
+            transform: scale(1.1);
+        }
+        .pic3{
+            height: 100%;
+            width: 33%;
+            background-color: blueviolet;
+            background-image: url(img/C.jpg);
+            background-position: center;
+            background-size: cover;
+            float: left;
+        }
+        .pic3:hover {
+            transform: scale(1.1);
+        }
+        @media screen and (max-width:1280px){
+            .block{
+                width: 800px;
+                height: 570px;
+                background-color: rgba(red, green, blue, 0);
+            }
+            .pic1{
+                height: calc(50% - 10px);
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .pic2{
+                height: 50%;
+                width: calc(50% - 5px);
+            }
+            .pic3{
+                height: 50%;
+                width: calc(50% - 5px);
+            }
+        }
+        @media screen and (max-width:1125px){
+            nav{
+                width: 100%;
+                height: 100px;
+                background-color: gray;
+                position: fixed;
+            }
+            .navbar{
+                width: 90%;
+                height: 100px;
+                background-color: gray;
+                background-image: url(img/menu.jpg);
+                background-position: center;
+                background-size: cover;
+                margin-right: auto;
+                margin-left: auto;
+                padding-top: 5px;
+            }
+            .logo{
+                height: 90px;
+                width: 90px;
+                background-color: black;
+                float: left;
+                margin:0;
+            }
+            ul{
+                width: calc(100% - 90px);
+                height: calc(100% - 10px);
+                background-color: rgba(red, green, blue, 0);
+                float: right;
+                margin-top: 0;
+            }
+            .line{
+                border: 1px solid black;
+                width: 50px;
+                height: 50px;
+                float: right;
+                margin-top: 25px;
+                margin-left: 10px;
+            }
+            .line:hover{
+            color: red;
+            background-color: white;
+            font-size: inherit;
+        }
+            .main{
+                width: 100%;
+                height: calc(100% - 100px);
+                background-color: aquamarine;
+                position: absolute;
+                top: 100px;
+            }
+            .block{
+                width: 90%;
+                height: 800px;
+                background-color: rgba(red, green, blue, 0);
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 50px;
+            }
+            .pic1{
+                height: calc(50% - 10px);
+                width: 100%;
+                background-color: gray;
+                margin-bottom: 10px;
+                float: left;
+            }
+            .pic2{
+                height: 50%;
+                width: calc(50% - 5px);
+                background-color: aqua;
+                margin-right: 10px;
+                float: left;
+            }
+            .pic3{
+                height: 50%;
+                width: calc(50% - 5px);
+                background-color: red;
+                float: left;
+            }
+        }
+        @media screen and (max-width:375px){
+            nav{
+                width: 100%;
+                height: 80px;
+                background-color: gray;
+                position: fixed;
+            }
+            .navbar{
+                width: 90%;
+                height: 75px;
+                background-color: gray;
+                position: relative;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .logo{
+                height: 50px;
+                width: 50px;
+                background-color: black;                
+                position: relative;
+                left: calc(50% - 25px);
+                top: 10px;
+            }
+            .btn{
+                height: 40px;
+                width: 40px;
+                background-color: white;
+                border-radius: 5px;
+                position: relative;
+                top: 15px;
+            }
+            .container{
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: antiquewhite;
+                background-image: url(img/B.jpg);
+                position: relative;
+                top: 0;
+            }
+            .main{
+                width: 100%;
+                height: 100%;
+                background-color: rgba(red, green, blue, 0);
+                margin-top: 0;
+            }
+            .block{
+                width: 100%;
+                height: 100%;
+                background-color: rgba(red, green, blue, 0);
+                margin-top: 0;
+            }
+            .pic1{
+                height: calc(33% - 10px);
+                width: 100%;
+                background-color: gray;
+                margin-bottom: 10px;
+                float: left;
+            }
+            .pic2{
+                height: calc(34% - 10px);
+                width: 100%;
+                background-color: aqua;
+                margin-bottom: 10px;
+                float: left;
+            }
+            .pic3{
+                height: 33%;
+                width: 100%;
+                background-color: red;
+                float: left;
+            }
+            ul{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="navbar">
+                <div class="logo"></div>
+                <div class="btn"></div>
+                <ul>
+                    <li class="line line1">新宇宙</li>
+                    <li class="line line2">返校日</li>
+                    <li class="line line3">離家日</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="block">
+                <div class="pic pic1"></div>
+                <div class="pic pic2"></div>
+                <div class="pic pic3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
