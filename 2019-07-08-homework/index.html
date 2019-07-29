@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>div01</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144640534-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144640534-1');
+    </script>
+
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             list-style: none;
             transition-duration: 0.5s;
         }
-        .container{
+
+        .container {
             width: 100%;
             height: 100vh;
             background-color: antiquewhite;
             position: relative;
             top: 0;
         }
-        nav{
+
+        nav {
             width: 325px;
             height: 100%;
             background-color: azure;
@@ -27,11 +40,12 @@
             background-position: center;
             background-size: cover;
             position: fixed;
-            left:0;
+            left: 0;
             top: 0;
             margin-right: 0;
         }
-        .logo{
+
+        .logo {
             width: 150px;
             height: 150px;
             background-color: gray;
@@ -39,12 +53,14 @@
             border-radius: 5px;
             background-position: center;
             background-size: cover;
-            margin:100px auto 50px auto;
+            margin: 100px auto 50px auto;
         }
+
         .logo:hover {
             transform: scale(1.1);
         }
-        .line{
+
+        .line {
             border: 1px solid black;
             width: 100px;
             height: 50px;
@@ -56,12 +72,14 @@
             border-radius: 10px;
             font-weight: 900;
         }
-        .line:hover{
+
+        .line:hover {
             font-size: 25px;
             color: black;
             background-color: white;
         }
-        .main{
+
+        .main {
             width: calc(100% - 325px);
             height: 100%;
             background-color: aquamarine;
@@ -71,7 +89,8 @@
             position: absolute;
             right: 0;
         }
-        .block{
+
+        .block {
             width: 960px;
             height: 570px;
             background-color: rgba(red, green, blue, 0);
@@ -80,7 +99,8 @@
             margin-top: calc(50vh - 285px);
             overflow: hidden;
         }
-        .pic1{
+
+        .pic1 {
             height: 100%;
             width: calc(33% - 10px);
             background-color: blueviolet;
@@ -90,10 +110,12 @@
             margin-right: 10px;
             float: left;
         }
+
         .pic1:hover {
             transform: scale(1.1);
         }
-        .pic2{
+
+        .pic2 {
             height: 100%;
             width: calc(34% - 10px);
             background-color: red;
@@ -103,10 +125,12 @@
             margin-right: 10px;
             float: left;
         }
+
         .pic2:hover {
             transform: scale(1.1);
         }
-        .pic3{
+
+        .pic3 {
             height: 100%;
             width: 33%;
             background-color: blueviolet;
@@ -115,38 +139,45 @@
             background-size: cover;
             float: left;
         }
+
         .pic3:hover {
             transform: scale(1.1);
         }
-        @media screen and (max-width:1280px){
-            .block{
+
+        @media screen and (max-width:1280px) {
+            .block {
                 width: 800px;
                 height: 570px;
                 background-color: rgba(red, green, blue, 0);
             }
-            .pic1{
+
+            .pic1 {
                 height: calc(50% - 10px);
                 width: 100%;
                 margin-right: 0;
                 margin-bottom: 10px;
             }
-            .pic2{
+
+            .pic2 {
                 height: 50%;
                 width: calc(50% - 5px);
             }
-            .pic3{
+
+            .pic3 {
                 height: 50%;
                 width: calc(50% - 5px);
             }
         }
-        @media screen and (max-width:1125px){
-            nav{
+
+        @media screen and (max-width:1125px) {
+            nav {
                 width: 100%;
                 height: 100px;
                 background-color: gray;
                 position: fixed;
             }
-            .navbar{
+
+            .navbar {
                 width: 90%;
                 height: 100px;
                 background-color: gray;
@@ -157,21 +188,24 @@
                 margin-left: auto;
                 padding-top: 5px;
             }
-            .logo{
+
+            .logo {
                 height: 90px;
                 width: 90px;
                 background-color: black;
                 float: left;
-                margin:0;
+                margin: 0;
             }
-            ul{
+
+            ul {
                 width: calc(100% - 90px);
                 height: calc(100% - 10px);
                 background-color: rgba(red, green, blue, 0);
                 float: right;
                 margin-top: 0;
             }
-            .line{
+
+            .line {
                 border: 1px solid black;
                 width: 50px;
                 height: 50px;
@@ -179,19 +213,22 @@
                 margin-top: 25px;
                 margin-left: 10px;
             }
-            .line:hover{
-            color: red;
-            background-color: white;
-            font-size: inherit;
-        }
-            .main{
+
+            .line:hover {
+                color: red;
+                background-color: white;
+                font-size: inherit;
+            }
+
+            .main {
                 width: 100%;
                 height: calc(100% - 100px);
                 background-color: aquamarine;
                 position: absolute;
                 top: 100px;
             }
-            .block{
+
+            .block {
                 width: 90%;
                 height: 800px;
                 background-color: rgba(red, green, blue, 0);
@@ -199,35 +236,40 @@
                 margin-left: auto;
                 margin-top: 50px;
             }
-            .pic1{
+
+            .pic1 {
                 height: calc(50% - 10px);
                 width: 100%;
                 background-color: gray;
                 margin-bottom: 10px;
                 float: left;
             }
-            .pic2{
+
+            .pic2 {
                 height: 50%;
                 width: calc(50% - 5px);
                 background-color: aqua;
                 margin-right: 10px;
                 float: left;
             }
-            .pic3{
+
+            .pic3 {
                 height: 50%;
                 width: calc(50% - 5px);
                 background-color: red;
                 float: left;
             }
         }
-        @media screen and (max-width:375px){
-            nav{
+
+        @media screen and (max-width:375px) {
+            nav {
                 width: 100%;
                 height: 80px;
                 background-color: gray;
                 position: fixed;
             }
-            .navbar{
+
+            .navbar {
                 width: 90%;
                 height: 75px;
                 background-color: gray;
@@ -235,15 +277,17 @@
                 margin-right: auto;
                 margin-left: auto;
             }
-            .logo{
+
+            .logo {
                 height: 50px;
                 width: 50px;
-                background-color: black;                
+                background-color: black;
                 position: relative;
                 left: calc(50% - 25px);
                 top: 10px;
             }
-            .btn{
+
+            .btn {
                 height: 40px;
                 width: 40px;
                 background-color: white;
@@ -251,7 +295,8 @@
                 position: relative;
                 top: 15px;
             }
-            .container{
+
+            .container {
                 width: 100%;
                 height: calc(100vh - 80px);
                 background-color: antiquewhite;
@@ -259,44 +304,51 @@
                 position: relative;
                 top: 0;
             }
-            .main{
+
+            .main {
                 width: 100%;
                 height: 100%;
                 background-color: rgba(red, green, blue, 0);
                 margin-top: 0;
             }
-            .block{
+
+            .block {
                 width: 100%;
                 height: 100%;
                 background-color: rgba(red, green, blue, 0);
                 margin-top: 0;
             }
-            .pic1{
+
+            .pic1 {
                 height: calc(33% - 10px);
                 width: 100%;
                 background-color: gray;
                 margin-bottom: 10px;
                 float: left;
             }
-            .pic2{
+
+            .pic2 {
                 height: calc(34% - 10px);
                 width: 100%;
                 background-color: aqua;
                 margin-bottom: 10px;
                 float: left;
             }
-            .pic3{
+
+            .pic3 {
                 height: 33%;
                 width: 100%;
                 background-color: red;
                 float: left;
             }
-            ul{
+
+            ul {
                 display: none;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <nav>
@@ -319,4 +371,5 @@
         </div>
     </div>
 </body>
+
 </html>
