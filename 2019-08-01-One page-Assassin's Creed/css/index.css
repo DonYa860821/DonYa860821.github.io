@@ -1,0 +1,58 @@
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.navbar .container .navbar-brand {
+  background-image: url("../img/nav/nav_logo.png");
+  height: 120px;
+  width: 100px;
+  background-size: cover;
+}
+
+#section1 .container-fluid .row .col {
+  height: calc(100vh - 136px);
+  width: 100%;
+  background-color: gray;
+}
+
+#section2 {
+  background-color: black;
+}
+
+#section2 .container .row .col {
+  height: 50vh;
+  background-color: white;
+}
+
+#section3 {
+  background-color: gray;
+}
+
+#section3 .container-fluid .row .col {
+  height: 50vh;
+}
+
+#section4 {
+  background-color: black;
+}
+
+#section4 .container {
+  background-color: white;
+}
+
+#section4 .container .row .col h1 {
+  text-align: center;
+}
+
+#section4 .container .row .col h2 {
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */
