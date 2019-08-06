@@ -1,15 +1,18 @@
-h1{
+h1 {
     font-size: 48px;
 }
-h2{
+
+h2 {
     font-size: 24px;
 }
-p{
+
+p {
     font-size: 18px;
 }
-.navbar{
-    .container{
-        .navbar-brand{
+
+.navbar {
+    .container {
+        .navbar-brand {
             background-image: url("../img/nav/nav_logo.png");
             height: 120px;
             width: 100px;
@@ -17,10 +20,11 @@ p{
         }
     }
 }
-#section1{
-    .container-fluid{
-        .row{
-            .col{
+
+#section1 {
+    .container-fluid {
+        .row {
+            .col {
                 height: calc(100vh - 136px);
                 width: 100%;
                 background-color: gray;
@@ -28,40 +32,66 @@ p{
         }
     }
 }
-#section2{
+
+#section2 {
     background-color: black;
-    .container{
-        .row{
-            .col{
-                height: 50vh;
-                background-color: white;
-            }
-        }
-    }
-}
-#section3{
-    background-color: gray;
-    .container-fluid{
-        .row{
-            .col{
-                height: 50vh;
-            }
-        }
-    }
-}
-#section4{
-    background-color: black;
-    .container{
+
+    .container {
+        height: 50vh;
         background-color: white;
-        .row{
-            .col{
-                h1{
+    }
+}
+
+#section3 {
+    background-color: gray;
+
+    .container-fluid {
+        .row {
+            .col {
+                height: 50vh;
+            }
+        }
+    }
+}
+
+#section4 {
+    background-color: black;
+
+    .container {
+        background-color: white;
+
+        .row {
+            .col {
+                h1 {
                     text-align: center;
                 }
-                h2{
+
+                h2 {
                     text-align: center;
                 }
             }
         }
     }
+}
+
+#section5 {
+    background-color: white;
+
+    .container {
+        .row {
+            .col {
+                h1 {
+                    text-align: center;
+                }
+
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+#section6 {
+    background-color: black;
 }

@@ -27,7 +27,7 @@ p {
   background-color: black;
 }
 
-#section2 .container .row .col {
+#section2 .container {
   height: 50vh;
   background-color: white;
 }
@@ -54,5 +54,21 @@ p {
 
 #section4 .container .row .col h2 {
   text-align: center;
+}
+
+#section5 {
+  background-color: white;
+}
+
+#section5 .container .row .col h1 {
+  text-align: center;
+}
+
+#section5 .container .row .col h2 {
+  text-align: center;
+}
+
+#section6 {
+  background-color: black;
 }
 /*# sourceMappingURL=index.css.map */
